@@ -1,0 +1,120 @@
+header {
+  width: 100%;
+  height: 90px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: 2px solid #e7e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: all 300ms;
+}
+header .headerNav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .headerNav .logoBike img {
+  width: 90px;
+}
+.headerResize {
+  height: 75px;
+}
+header .headerNav nav {
+  transition: all 300ms;
+}
+header .headerNav nav ul {
+  background-color: #fff;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+header .headerNav nav ul li {
+  text-decoration: none;
+  color: #141414;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: all 300ms;
+  background: linear-gradient(
+    transparent 0%,
+    transparent 90%,
+    #ff6900 90%,
+    #ff6900 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: left;
+  cursor: pointer;
+}
+header .headerNav nav ul li:hover {
+  background-size: 100% 100%;
+  background-position-x: left;
+}
+header .headerNav svg {
+  display: none;
+  width: 35px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    & .headerNav {
+      width: 85%;
+      & nav {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 95px;
+        left: 0;
+        &.displayNav {
+          height: 224px;
+        }
+        & ul {
+          padding: 20px;
+          width: 80%;
+          border: 2px solid #e7e7e7;
+          border-top: 2px solid #ff6900;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          gap: 20px;
+          align-items: start;
+          flex-direction: column;
+
+          & li {
+            width: 100%;
+            padding: 5px;
+            border-bottom: 1px solid #e7e7e7;
+
+            &:hover {
+              background-color: #e7e7e7;
+            }
+
+            & a {
+              display: block;
+
+              &:hover {
+                color: #141414;
+              }
+            }
+          }
+        }
+      }
+      & svg {
+        display: inline;
+        width: 35px;
+        cursor: pointer;
+      }
+    }
+  }
+}
