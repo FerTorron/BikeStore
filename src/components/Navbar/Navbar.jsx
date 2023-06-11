@@ -13,10 +13,9 @@ const Navbar = () => {
                 </div>
                 <nav id="nav">
                     <ul>
-                        <li>Inicio</li>
                         <li>Bicis</li>
                         <li>Accesorios</li>
-                        <li>Contacto</li>
+                        <li>Usadas</li>
                     </ul>
                 </nav>
                 <svg
