@@ -1,10 +1,13 @@
+// import { useState } from 'react'
 import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget.jsx'
 
 const Navbar = () => {
+    // const [style, setStyle] = useState("0px");
     // const menuBtn = () => {
-
+    //     setStyle("175px")
     // }
+
     return (
         <header id="header">
             <div className="headerNav">
@@ -19,6 +22,7 @@ const Navbar = () => {
                     </ul>
                 </nav>
                 <svg
+                    // onClick={menuBtn}
                     id="btn-menu"
                     viewBox="0 0 24 24"
                     fill="none"

@@ -20,7 +20,7 @@ header .headerNav {
   justify-content: space-between;
 }
 header .headerNav .logoBike img {
-  width: 90px;
+  width: 75px;
 }
 .headerResize {
   height: 75px;
@@ -65,56 +65,48 @@ header .headerNav svg {
 }
 
 @media screen and (max-width: 768px) {
-  header {
-    & .headerNav {
-      width: 85%;
-      & nav {
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 95px;
-        left: 0;
-        &.displayNav {
-          height: 224px;
-        }
-        & ul {
-          padding: 20px;
-          width: 80%;
-          border: 2px solid #e7e7e7;
-          border-top: 2px solid #ff6900;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-          gap: 20px;
-          align-items: start;
-          flex-direction: column;
-
-          & li {
-            width: 100%;
-            padding: 5px;
-            border-bottom: 1px solid #e7e7e7;
-
-            &:hover {
-              background-color: #e7e7e7;
-            }
-
-            & a {
-              display: block;
-
-              &:hover {
-                color: #141414;
-              }
-            }
-          }
-        }
-      }
-      & svg {
-        display: inline;
-        width: 35px;
-        cursor: pointer;
-      }
-    }
+  header .headerNav {
+    width: 85%;
+  }
+  header .headerNav nav {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 95px;
+    left: 0;
+  }
+  .displayNav {
+    height: 175px;
+  }
+  header .headerNav nav ul {
+    padding: 20px;
+    width: 80%;
+    border: 2px solid #e7e7e7;
+    border-top: 2px solid #ff6900;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    gap: 20px;
+    align-items: start;
+    flex-direction: column;
+  }
+  header .headerNav nav ul li {
+    width: 100%;
+    padding: 5px;
+    border-bottom: 1px solid #e7e7e7;
+  }
+  header .headerNav nav ul li:hover {
+    background-color: #e7e7e7;
+  }
+  header .headerNav nav ul li a {
+    display: block;
+  }
+  header .headerNav nav ul li a:hover {
+    color: #141414;
+  }
+  header .headerNav svg {
+    display: inline;
   }
 }
