@@ -9,7 +9,7 @@ const Navbar = () => {
         <header id="header">
             <div className="headerNav">
                 <div className="logoBike">
-                    <img src="/src/assets/bs-logo-orange.png" alt="Logo BikeStore" />
+                    <img src="../public/cartBasket.svg" alt="Logo BikeStore" />
                 </div>
                 <nav id="nav">
                     <ul>
