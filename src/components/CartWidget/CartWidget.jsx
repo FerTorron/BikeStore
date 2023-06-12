@@ -3,7 +3,7 @@ import './CartWidget.css'
 function CartWidget() {
     return (
         <div className='cartDiv'>
-            <img src="cartBasket.svg" alt="" />
+            <img src="/img/icons/cartBasket.svg" alt="" />
             <span>5</span>
         </div>
     )
