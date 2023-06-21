@@ -1,5 +1,54 @@
 .titleGreeting {
-  margin-top: 50px;
+  margin: 50px;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 2.2rem;
+}
+
+.listBikes {
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+}
+
+.bikeItem {
+  border-radius: 15px;
+  width: 224px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: 2px solid #f7f7f7;
+  overflow: hidden;
+}
+.bikeItem img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.bikeItem p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.bikeItem span {
+  font-size: 1.2rem;
+}
+.bikeItem button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: 2px solid #ff6900;
+  background: #ff6900;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 300msn;
+}
+.bikeItem button:hover {
+  background-color: #fff;
+  color: #ff6900;
 }

@@ -7,7 +7,7 @@ const App = () => {
     <>
       <Navbar />
       <BgInicio title={"Tienda de Bicicletas"} description={"El paraíso para los Amantes del Ciclismo"} />
-      <ItemListContainer greeting={"¡Hola! Bienvenido a BikeStore"} />
+      <ItemListContainer />
     </>
   )
 }
