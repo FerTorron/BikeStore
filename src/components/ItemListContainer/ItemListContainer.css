@@ -8,6 +8,7 @@
   margin: auto;
   width: 80%;
   display: grid;
+  place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 50px;
 }
@@ -15,7 +16,7 @@
 .bikeItem {
   border-radius: 15px;
   width: 224px;
-  height: auto;
+  height: 350px;
   display: flex;
   align-items: center;
   gap: 15px;
