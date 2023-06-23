@@ -1,0 +1,41 @@
+.bikeArticle {
+  width: 45%;
+  height: 360px;
+  padding: 30px;
+  border-radius: 10px;
+}
+.bikeArticle h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.bikeArticle p {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.bikeArticle button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #a00101;
+  border: 2px solid #a00101;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.bikeArticle button:hover {
+  background-color: #ff6900;
+  border: 2px solid #ff6900;
+}
+.newBikeArticle {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/img/newUsed/newBike.jpeg) no-repeat center center/cover;
+}
+.usedBikeArticle {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/img/newUsed/usedBike.jpg) no-repeat center center/cover;
+}
