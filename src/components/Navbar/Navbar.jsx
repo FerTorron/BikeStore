@@ -2,6 +2,8 @@
 import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget.jsx'
 
+import { Link, NavLink } from 'react-router-dom'
+
 const Navbar = () => {
     // const [style, setStyle] = useState("0px");
     // const menuBtn = () => {
@@ -12,11 +14,13 @@ const Navbar = () => {
         <header id="header">
             <div className="headerNav">
                 <div className="logoBike">
-                    <img src="/img/logo/bs-logo-orange.png" alt="Logo BikeStore" />
+                    <Link to="/">
+                        <img src="/img/logo/bs-logo-orange.png" alt="Logo BikeStore" />
+                    </Link>
                 </div>
                 <nav id="nav">
                     <ul>
-                        <li>Bicis</li>
+                        <li><NavLink to="/bicicletas">Bicis</NavLink></li>
                         <li>Accesorios</li>
                         <li>Usadas</li>
                     </ul>

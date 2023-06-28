@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import './NewUsedItem.css'
 
-const NewUsedItem = (props) => {
+const NewUsedItem = ({ title, description }) => {
     return (
         <div className="bikeArticle newBikeArticle">
-            <h2> {props.title} </h2>
-            <p> {props.description} </p>
+            <h2> {title} </h2>
+            <p> {description} </p>
             <button>Ver Más</button>
         </div>
     )

@@ -1,0 +1,40 @@
+.bikeItem {
+  border-radius: 15px;
+  width: 224px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  overflow: hidden;
+}
+.bikeItem img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.bikeItem p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.bikeItem span {
+  font-size: 1.2rem;
+}
+.bikeItem button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: 2px solid #ff6900;
+  background: #ff6900;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.bikeItem button:hover {
+  background-color: #fff;
+  color: #ff6900;
+}

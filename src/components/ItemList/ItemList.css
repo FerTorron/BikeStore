@@ -1,0 +1,8 @@
+.listBikes {
+  margin: auto;
+  width: 80%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+}
