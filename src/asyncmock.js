@@ -1,8 +1,10 @@
 const productos = [
-    { id: 1, nombre: "Rocky Mountain", precio: 11.499, img: "/img/products/rockyMountain.jpg", idCat: "1" },
+    { id: 1, nombre: "Rocky Mountain", precio: 11499, img: "/img/products/rockyMountain.jpg", idCat: "1" },
     { id: 2, nombre: "Orbea Oiz M10", precio: 5099, img: "/img/products/orbeaOizM10.jpeg", idCat: "2" },
-    { id: 1, nombre: "Rocky Mountain", precio: 11.499, img: "/img/products/rockyMountain.jpg", idCat: "1" },
-    { id: 2, nombre: "Orbea Oiz M10", precio: 5099, img: "/img/products/orbeaOizM10.jpeg", idCat: "2" }
+    { id: 3, nombre: "Orbea Onna 10", precio: 929, img: "/img/products/orbeaOnna10.jpeg", idCat: "1" },
+    { id: 3, nombre: "Orbea Onna 30", precio: 929, img: "/img/products/orbeaOnna30.jpeg", idCat: "1" },
+    { id: 3, nombre: "Orbea Terra", precio: 929, img: "/img/products/orbeaTerra.jpg", idCat: "1" },
+    { id: 4, nombre: "Orbea Onna 20", precio: 5099, img: "/img/products/orbeaOnna20.jpeg", idCat: "2" }
 ]
 
 export const getProductos = () => {
