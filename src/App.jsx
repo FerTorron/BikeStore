@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Error from './components/Error/Error';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path='/item/:idItem' element={<ItemDetailContainer />} />
           <Route path='*' element={<Error />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   )
