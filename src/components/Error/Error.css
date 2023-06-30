@@ -1,0 +1,29 @@
+.errorContainer {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.errorCartel {
+  background: #fff;
+  border: 2px solid #ff6900;
+  width: 85%;
+  height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.errorCartel h2 {
+  font-size: 3rem;
+}
+.errorCartel span {
+  font-size: 3rem;
+}
+.errorCartel p {
+  font-size: 2rem;
+}

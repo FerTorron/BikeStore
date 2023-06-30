@@ -20,9 +20,9 @@ const Navbar = () => {
                 </div>
                 <nav id="nav">
                     <ul>
-                        <li><NavLink to="/categoria/1">MTB</NavLink></li>
-                        <li><NavLink to="/categoria/2">Accesorios</NavLink></li>
-                        <li><NavLink to="/categoria/3">EBIKE</NavLink></li>
+                        <li><NavLink to="/categoria/mtb">MTB</NavLink></li>
+                        <li><NavLink to="/categoria/accesorios">Accesorios</NavLink></li>
+                        <li><NavLink to="/categoria/ebike">EBIKE</NavLink></li>
                     </ul>
                 </nav>
                 <svg
