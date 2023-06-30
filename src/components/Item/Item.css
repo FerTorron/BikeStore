@@ -23,7 +23,7 @@
 .bikeItem span {
   font-size: 1.2rem;
 }
-.bikeItem button {
+.bikeItem a {
   padding: 10px 20px;
   font-size: 1rem;
   border-radius: 1rem;
@@ -33,8 +33,9 @@
   font-weight: 500;
   cursor: pointer;
   transition: all 300ms;
+  text-decoration: none;
 }
-.bikeItem button:hover {
+.bikeItem a:hover {
   background-color: #fff;
   color: #ff6900;
 }
