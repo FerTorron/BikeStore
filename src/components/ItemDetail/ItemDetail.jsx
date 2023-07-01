@@ -9,7 +9,7 @@ const ItemDetail = ({ id, nombre, precio, img, description }) => {
                 <h2> {nombre} </h2>
                 <p>{description}</p>
                 <span> ${precio} </span>
-                <button>Agregar</button>
+                <button>Agregar al Carrito</button>
             </div>
         </div>
     )

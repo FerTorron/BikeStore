@@ -50,3 +50,30 @@
   background-color: #fff;
   color: #ff6900;
 }
+
+@media screen and (max-width: 768px) {
+  .itemDetail {
+    flex-direction: column;
+  }
+  .itemDetailImg {
+    width: 100%;
+  }
+  .itemDetailImg img {
+    height: 200px;
+  }
+  .itemDetailInfo {
+    width: 100%;
+  }
+  .itemDetailInfo h2 {
+    font-size: 2rem;
+  }
+  .itemDetailInfo p {
+    font-size: 1.1rem;
+  }
+  .itemDetailInfo span {
+    font-size: 1.8rem;
+  }
+  .itemDetailInfo button {
+    font-size: 1rem;
+  }
+}

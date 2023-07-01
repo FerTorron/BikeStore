@@ -1,14 +1,14 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget.jsx'
 
 import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
-    // const [style, setStyle] = useState("0px");
-    // const menuBtn = () => {
-    //     setStyle("175px")
-    // }
+    const [navOpen, setNavOpen] = useState(false);
+    const menuBtn = () => {
+        setNavOpen(!navOpen)
+    }
 
     return (
         <header id="header">
@@ -18,15 +18,15 @@ const Navbar = () => {
                         <img src="/img/logo/bs-logo-orange.png" alt="Logo BikeStore" />
                     </Link>
                 </div>
-                <nav id="nav">
+                <nav id="nav" className={navOpen ? "displayNav" : null}>
                     <ul>
-                        <li><NavLink to="/categoria/mtb">MTB</NavLink></li>
-                        <li><NavLink to="/categoria/accesorios">Accesorios</NavLink></li>
-                        <li><NavLink to="/categoria/ebike">EBIKE</NavLink></li>
+                        <li onClick={menuBtn}><NavLink to="/categoria/mtb">MTB</NavLink></li>
+                        <li onClick={menuBtn}><NavLink to="/categoria/accesorios">Accesorios</NavLink></li>
+                        <li onClick={menuBtn}><NavLink to="/categoria/ebike">EBIKE</NavLink></li>
                     </ul>
                 </nav>
                 <svg
-                    // onClick={menuBtn}
+                    onClick={menuBtn}
                     id="btn-menu"
                     viewBox="0 0 24 24"
                     fill="none"

@@ -109,7 +109,7 @@ header .headerNav svg {
     left: 0;
   }
   .displayNav {
-    height: 175px;
+    height: 175px !important;
   }
   header .headerNav nav ul {
     padding: 20px;
