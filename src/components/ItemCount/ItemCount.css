@@ -1,0 +1,8 @@
+.countContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.btnCount {
+  padding: 1px;
+}
