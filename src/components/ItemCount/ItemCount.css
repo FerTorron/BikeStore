@@ -4,5 +4,33 @@
 }
 
 .btnCount {
-  padding: 1px;
+  font-size: 1.2rem;
+  background-color: #ff6900;
+  border: 2px solid #ff6900;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.btnCount:hover {
+  background-color: #fff;
+  color: #ff6900;
+}
+
+.btnAddCart {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  border: 2px solid #ff6900;
+  background-color: #ff6900;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.btnAddCart:hover {
+  background-color: #fff;
+  color: #ff6900;
 }

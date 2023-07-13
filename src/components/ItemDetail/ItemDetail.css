@@ -35,18 +35,20 @@
   font-size: 2.2rem;
   font-weight: 600;
 }
-.itemDetailInfo button {
-  padding: 10px 20px;
+.itemDetailInfo a {
   font-size: 1.2rem;
-  border-radius: 1rem;
-  border: 2px solid #ff6900;
   background-color: #ff6900;
-  color: #fff;
+  border: 2px solid #ff6900;
+  border-radius: 20px;
+  padding: 10px 20px;
   font-weight: 500;
+  color: #fff;
   cursor: pointer;
+  text-decoration: none;
+  text-align: center;
   transition: all 300ms;
 }
-.itemDetailInfo button:hover {
+.itemDetailInfo a:hover {
   background-color: #fff;
   color: #ff6900;
 }
