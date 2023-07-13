@@ -9,20 +9,23 @@ const Navbar = () => {
     const menuBtn = () => {
         setNavOpen(!navOpen)
     }
+    const scrollToTop = () => {
+        window.scrollTo({ top: 675, behavior: 'smooth' });
+    };
 
     return (
         <header id="header">
             <div className="headerNav">
                 <div className="logoBike">
-                    <Link to="/">
+                    <Link to="/" onClick={scrollToTop}>
                         <img src="/img/logo/bs-logo-orange.png" alt="Logo BikeStore" />
                     </Link>
                 </div>
                 <nav id="nav" className={navOpen ? "displayNav" : null}>
                     <ul>
-                        <li onClick={menuBtn}><NavLink to="/categoria/mtb">MTB</NavLink></li>
-                        <li onClick={menuBtn}><NavLink to="/categoria/accesorios">Accesorios</NavLink></li>
-                        <li onClick={menuBtn}><NavLink to="/categoria/ebike">EBIKE</NavLink></li>
+                        <li onClick={menuBtn}><NavLink onClick={scrollToTop} to="/categoria/mtb">MTB</NavLink></li>
+                        <li onClick={menuBtn}><NavLink onClick={scrollToTop} to="/categoria/accesorios">Accesorios</NavLink></li>
+                        <li onClick={menuBtn}><NavLink onClick={scrollToTop} to="/categoria/ebike">EBIKE</NavLink></li>
                     </ul>
                 </nav>
                 <svg

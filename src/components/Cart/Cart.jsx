@@ -15,6 +15,10 @@ const Cart = () => {
         )
     }
 
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
         <div className='cartContainer'>
             <h2>Carrito</h2>
@@ -25,7 +29,7 @@ const Cart = () => {
             <h3>Cantidad Total: {cantidadTotal}</h3>
             <div className="buttonsCart">
                 <button onClick={() => vaciarCarrito()}>Vaciar Carrito</button>
-                <Link to="/checkout">Finalizar Compra</Link>
+                <Link onClick={scrollToTop} to="/checkout">Finalizar Compra</Link>
             </div>
         </div>
     )

@@ -13,7 +13,13 @@ const ItemDetail = ({ id, nombre, precio, img, description, stock }) => {
         setAgregarCantidad(cantidad)
         const item = { id, nombre, precio }
         agregarProducto(item, cantidad)
+
     }
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
         <div className='itemDetail'>
             <div className="itemDetailImg">
@@ -24,7 +30,7 @@ const ItemDetail = ({ id, nombre, precio, img, description, stock }) => {
                 <p>{description}</p>
                 <span> ${precio} </span>
                 {
-                    agregarCantidad > 0 ? (<Link to="/cart">Terminar Compra</Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)
+                    agregarCantidad > 0 ? (<Link onClick={scrollToTop} to="/cart">Terminar Compra</Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)
                 }
             </div>
         </div>
