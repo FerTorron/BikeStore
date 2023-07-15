@@ -1,0 +1,142 @@
+.checkoutContainer {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.checkoutContainer h2 {
+  font-size: 2.2rem;
+}
+.checkoutContainer p {
+  font-size: 1.2rem;
+}
+
+.checkoutContainer form {
+  margin-top: 20px;
+  width: 80%;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 50px;
+}
+
+.itemsCheckoutContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.itemsCheckoutContainer h3 {
+  font-size: 1.5rem;
+}
+.itemsCheckoutContainer hr {
+  width: 100%;
+  height: 1px;
+  background-color: #ff6900;
+  border: 2px solid #ff6900;
+  border-radius: 20px;
+}
+.itemCheckout {
+  width: 100%;
+}
+.itemCheckout hr {
+  margin-top: 5px;
+  background-color: #696969;
+  border: 0px solid #696969;
+}
+.infoItemCheckout {
+  display: flex;
+  justify-content: space-between;
+}
+.infoItemCheckout p {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.infoItemCheckout span {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.formInputs {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.formInputs h3 {
+  font-size: 1.5rem;
+}
+.formInputs hr {
+  width: 100%;
+  height: 1px;
+  background-color: #ff6900;
+  border: 2px solid #ff6900;
+  border-radius: 20px;
+}
+.inputNames {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.formInputs input {
+  width: 100%;
+  font-size: 1rem;
+  height: 45px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ff6900;
+}
+.formInputs button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid #ff6900;
+  background-color: #ff6900;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.formInputs button:hover {
+  background-color: #fff;
+  color: #ff6900;
+}
+.msgFinal {
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .checkoutContainer form {
+    flex-direction: column;
+  }
+  .formInputs {
+    width: 100%;
+  }
+  .itemsCheckoutContainer {
+    width: 100%;
+  }
+  .separadorMedio {
+    display: none;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
