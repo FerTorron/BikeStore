@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import './ItemListContainer.css'
-// import { getProductos, getProductosPorCategoria } from "../../asyncmock";
 import { useParams } from "react-router-dom";
 import ItemList from "../ItemList/ItemList";
 import BgInicio from "../BgInicio/BgInicio";
@@ -26,13 +25,6 @@ const ItemListContainer = () => {
             .catch(error => console.log(error))
     }, [idCategoria])
 
-    // useEffect(() => {
-    //     const funcion = idCategoria ? getProductosPorCategoria : getProductos;
-
-    //     funcion(idCategoria)
-    //         .then(res => setProductos(res))
-
-    // }, [idCategoria])
     return (
         <>
             <BgInicio title={"Tienda de Bicicletas"} description={"El paraíso para los Amantes del Ciclismo"} />
