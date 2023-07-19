@@ -1,8 +1,16 @@
-# BikeStore
+<h1 align="center">🚲️ BikeStore 🚲️</h1>
+<img src="https://github.com/FerTorron/BikeStore/assets/100718699/7012e89d-f492-437f-a34b-d70c03fb9ca6">
 
 Este es un proyecto de Ecommerce Básico que se utiliza para el curso de React de Coderhouse. La aplicación permite ver una lista de bicicletas y accesorios para comprarlos en línea. Los productos y las órdenes se almacenan en Firebase.
 
 ## Tecnologías Usadas
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![ReactRouter](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+<br><br>
 
 ## Funcionalidades
 
