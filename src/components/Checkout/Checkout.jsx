@@ -2,7 +2,7 @@ import './Checkout.css'
 import { useState, useContext } from 'react'
 import { CarritoContext } from '../../context/CarritoContext'
 import { db } from '../../services/config'
-import { collection, addDoc } from 'firebase/firestore'
+import { collection, addDoc, updateDoc, doc, getDoc } from 'firebase/firestore'
 
 const Checkout = () => {
     const [nombre, setNombre] = useState("Coki")
@@ -13,7 +13,7 @@ const Checkout = () => {
     const [error, setError] = useState("")
     const [ordenId, setOrdenId] = useState("")
 
-    const { carrito, vaciarCarrito, total, cantidadTotal } = useContext(CarritoContext)
+    const { carrito, vaciarCarrito, total } = useContext(CarritoContext)
 
     const manejadorForm = (event) => {
         event.preventDefault()
@@ -46,14 +46,30 @@ const Checkout = () => {
             email
         }
 
-        addDoc(collection(db, "ordenes"), orden)
-            .then(docRef => {
-                setOrdenId(docRef.id)
-                vaciarCarrito()
+        Promise.all(
+            orden.items.map(async (productoOrden) => {
+                const productoRef = doc(db, "productos", productoOrden.id)
+                const productoDoc = await getDoc(productoRef)
+                const stockActual = productoDoc.data().stock
+                await updateDoc(productoRef, {
+                    stock: stockActual - productoOrden.cantidad,
+                })
             })
-            .catch(error => {
-                console.log("Se produjo un Error", error)
-                setError(error)
+        )
+            .then(() => {
+                addDoc(collection(db, "ordenes"), orden)
+                    .then((docRef) => {
+                        setOrdenId(docRef.id)
+                        vaciarCarrito()
+                    })
+                    .catch((error) => {
+                        console.log(error)
+                        setError("Error al Crear la Orden, vuelva a intentarlo")
+                    })
+            })
+            .catch((error) => {
+                console.log(error)
+                setError("No se puede actualizar el Stock")
             })
 
     }
